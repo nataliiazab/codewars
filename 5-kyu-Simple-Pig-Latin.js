@@ -12,10 +12,14 @@ const words = str.split(" ");
 const wordEnding = "ay";
 let newStr = [];
   for (const word of words){
+    if (word !== "!" && word !== "?") 
+    { 
     const firstLetter = word[0];
     const wordWithoutFirstLetter = word.slice(1);
     const modifiedWord = wordWithoutFirstLetter + firstLetter + wordEnding; 
-    newStr.push(modifiedWord);
+    newStr.push(modifiedWord)
+    } else {
+   newStr.push(word)}
   }
 
 const result = newStr.join(" ");
