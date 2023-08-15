@@ -6,9 +6,7 @@
 //Solution:
 
 function moveZeros(arr) {
-
   const zeros = arr.filter((num) => num === 0);
   const nonZeros = arr.filter((num) => num !== 0);
-  return nonZeros.concat(zeros)
+  return nonZeros.concat(zeros);
 }
-
